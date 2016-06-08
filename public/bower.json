@@ -1,0 +1,33 @@
+{
+  "name": "Test-Laravel-Angular",
+  "description": "Simple Application with Laravel 5 and Angular.js",
+  "main": "public/index.php",
+  "authors": [
+    "Quoc Tri Tran"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Laravel",
+    "Laravel-Elixir",
+    "Bootstrap",
+    "Bower",
+    "Angular",
+    "Angular-Route",
+    "Angular-Cookies",
+    "Gulp"
+  ],
+  "homepage": "https://github.com/qctr/test_laravel_angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-route": "^1.5.6",
+    "angular-cookies": "^1.5.6",
+    "bootstrap": "^3.3.6"
+  }
+}
