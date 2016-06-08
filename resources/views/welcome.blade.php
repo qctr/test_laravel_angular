@@ -1,45 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="myApp">
     <head>
-        <title>Laravel</title>
+        <title>Simple Application</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <!-- Load Bootstrap CSS -->
+        <link href="<?= asset('bower_components/bootstrap/dist/css/bootstrap.min.css') ?>" rel="stylesheet">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
+        <link href="<?= asset('css/main.css') ?>" rel="stylesheet">
+        <script>var baseUrl = "{{ url('/') }}/";</script>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
+        <div class="container" ng-controller="globalController">
+            <div ng-include="global.navUrl"></div>
         </div>
+        <div class="header-bottom-line"></div>
+        <div class="container">
+            <div class="ng-view"></div>
+        </div>
+
+
+        <!-- Load Javascript Libraries (AngularJS, JQuery, Bootstrap) -->
+        <script src="<?= asset('bower_components/angular/angular.min.js') ?>"></script>
+        <script src="<?= asset('bower_components/angular-route/angular-route.min.js') ?>"></script>
+        <script src="<?= asset('bower_components/angular-cookies/angular-cookies.min.js') ?>"></script>
+        <script src="<?= asset('bower_components/jquery/dist/jquery.min.js') ?>"></script>
+        <script src="<?= asset('bower_components/bootstrap/dist/js/bootstrap.min.js') ?>"></script>
+
+        <!-- AngularJS Application Scripts -->
+        <script src="<?= asset('js/app.js') ?>"></script>
+        <script src="<?= asset('js/controllers.js') ?>"></script>
     </body>
 </html>
