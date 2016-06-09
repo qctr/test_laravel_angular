@@ -8,13 +8,7 @@
 
 ## Personal Documentation
 
-This is a simple application using Laravel 5 and Angular.js.
-
-The style is based on bootstrap. Using gulp to create css and js files.
-
-The application contains a dynamic navigation menu and a login function to a private page.
-
-To simplfy the task it is only the login function related to the database. The content is fixed.
+This is a simple application using Laravel 5 and Angular.js. The style is based on bootstrap. Using gulp to create css and js files. The application contains a dynamic navigation menu and a login function to a private page. To simplfy the task it is only the login function related to the database. The content is fixed.
 
 
 ## Install
@@ -22,21 +16,33 @@ To simplfy the task it is only the login function related to the database. The c
 It is already included in the project. Just a little documentation what kind of components were been created:
 
 composer create-project laravel/laravel test_laravel_angular
+
 cd public
+
 bower init
+
 bower install angular --save
+
 bower install angular-route --save
+
 bower install angular-cookies --save
+
 bower install bootstrap --save
+
 bower install bootstrap-sass --save
+
 cd ..
+
 npm install laravel-elixir --save
+
 npm install gulp --save
 
 ## Configuration
 
 Define the DB connection in .env File and run:
+
 php artisan migrate:install
+
 php artisan migrate
 
 ## Official Documentation
