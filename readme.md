@@ -45,6 +45,8 @@ php artisan migrate:install
 
 php artisan migrate
 
+After the migration, the login data are: test@test.ch / test
+
 ## Problem
 
 If there is not working, it is because the vendor is not commited. So you have to created a new project with following command: composer create-project laravel/laravel test_laravel_angular
