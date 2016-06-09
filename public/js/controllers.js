@@ -53,8 +53,6 @@ myApp.controller('userController', ['$scope', '$location', 'userModel', function
 				$location.path('/private');
 			});
 		},
-
-		
 	});
 }]);
 //# sourceMappingURL=controllers.js.map
