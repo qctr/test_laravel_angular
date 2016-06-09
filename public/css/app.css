@@ -1,2 +1,96 @@
+body {
+  text-decoration: none;
+  font-size: 14px; }
+
+header {
+  text-decoration: none; }
+
+h3 {
+  font-size: 16px; }
+
+section {
+  color: #bcbcbc; }
+
+.logo {
+  font-size: 18px;
+  font-weight: bold; }
+
+.bold {
+  font-weight: bold;
+  color: #000000; }
+
+.space {
+  margin-top: 20px; }
+
+.space-xs {
+  margin-top: 10px; }
+
+.nav > li > a {
+  margin-right: 20px; }
+
+@media (max-width: 990px) {
+  .nav > li > a {
+    margin-right: 0px; } }
+
+.header-bottom-line {
+  background-color: #ffd333;
+  height: 5px;
+  margin-bottom: 30px; }
+
+.dropdown-menu > .active > a {
+  background-color: #ffd333; }
+
+.pull-right > .btn {
+  width: 36px; }
+
+.pull-right > .active {
+  border-radius: 10px 10px 10px 10px;
+  background-color: #e9f0f7; }
+
+.active > a {
+  color: #ffd333; }
+
+a {
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none; }
+
+a:hover {
+  color: #000000;
+  text-decoration: none; }
+
+a:active, a:focus {
+  color: #ffd333;
+  text-decoration: none; }
+
+/* logo without image */
+a span {
+  letter-spacing: 5px;
+  font-weight: lighter;
+  text-decoration: none; }
+
+.navbar-brand {
+  font-size: 24px;
+  /*margin-left: 0px;*/ }
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    margin-left: -15px; } }
+
+/* create a menu button by css instead an image */
+.navbar-toggle .icon-bar {
+  background-color: #000000;
+  width: 25px;
+  height: 1px;
+  text-decoration: none; }
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 8px;
+  text-decoration: none; }
+
+.navbar-nav > li > a:focus {
+  color: #ffd333;
+  background-color: #ffffff;
+  outline-color: #ffffff; }
 
 /*# sourceMappingURL=app.css.map */

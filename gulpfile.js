@@ -20,11 +20,17 @@ elixir(function(mix) {
 
     mix.scripts([
     	'controllers/globalController.js',
-    	'controllers/navController.js'
+    	'controllers/navController.js',
+    	'controllers/userController.js',
     ], 'public/js/controllers.js');
+
+    mix.scripts([
+    	'models/userModel.js'
+    ], 'public/js/models.js');
 
     mix.version([
     	'js/app.js',
-    	'js/controllers.js'
+    	'js/controllers.js',
+    	'js/models.js'
     ]);
 });

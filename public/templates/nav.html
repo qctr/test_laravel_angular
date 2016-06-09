@@ -1,5 +1,12 @@
 <div ng-controller="navController">
-	<div class="space"></div>
+	<div class="row">
+      <div class="pull-right">
+        <p>
+          <a class="btn btn-xs" role="button" href="#login" ng-hide="user.name">Login</a>
+          <a class="btn btn-xs" role="button" href="#" ng-show="user.name" ng-click="doLogout()">Logout</a>
+        </p>
+      </div>
+    </div>
 
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
 		<span class="sr-only">Toggle navigation</span>
@@ -12,14 +19,11 @@
 		<div class="col-md-6 col-sm-6 col-xs-6">
 			<nav class="collapse navbar-collapse" id="main-menu">          
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#home">Home</a></li>
-					<li><a href="#link">Link</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#dropdown">Dropdown<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#submenu1">Submenu 1</a></li>
-							<li><a href="#submenu2">Submenu 2</a></li>
-							<li><a href="#submenu3">Submenu 3</a></li>
+					<li ng-repeat="link in navUrl">
+						<a href="#{{ link.url }}" ng-hide="link.subMenu" ng-class="checkActiveLink(link.url)">{{ link.name }}</a>
+						<a ng-show="link.subMenu" class="dropdown-toggle" data-toggle="dropdown" href="{{ link.url }}">{{ link.name }}<span class="caret"></span></a>
+						<ul ng-show="link.subMenu" class="dropdown-menu">
+							<li ng-repeat="sublink in link.subMenu"><a href="{{ sublink.url }}" ng-class="checkActiveLink(sublink.url)">{{ sublink.name }}</a></li>
 						</ul>
 					</li>
 				</ul>

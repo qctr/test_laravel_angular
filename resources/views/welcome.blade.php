@@ -5,8 +5,8 @@
 
         <!-- Load Bootstrap CSS -->
         <link href="<?= asset('bower_components/bootstrap/dist/css/bootstrap.min.css') ?>" rel="stylesheet">
-
-        <link href="<?= asset('css/main.css') ?>" rel="stylesheet">
+        <link href="<?= asset('css/app.css') ?>" rel="stylesheet">
+        
         <script>var baseUrl = "{{ url('/') }}/";</script>
     </head>
     <body>
@@ -29,5 +29,6 @@
         <!-- AngularJS Application Scripts -->
         <script src="<?= asset('js/app.js') ?>"></script>
         <script src="<?= asset('js/controllers.js') ?>"></script>
+        <script src="<?= asset('js/models.js') ?>"></script>
     </body>
 </html>
