@@ -1,4 +1,4 @@
-# Laravel PHP Framework
+# Laravel PHP Framework using Angular.js
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
@@ -6,9 +6,38 @@
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Personal Documentation
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+This is a simple application using Laravel 5 and Angular.js.
+
+The style is based on bootstrap. Using gulp to create css and js files.
+
+The application contains a dynamic navigation menu and a login function to a private page.
+
+To simplfy the task it is only the login function related to the database. The content is fixed.
+
+
+## Install
+
+It is already included in the project. Just a little documentation what kind of components were been created:
+
+composer create-project laravel/laravel test_laravel_angular
+cd public
+bower init
+bower install angular --save
+bower install angular-route --save
+bower install angular-cookies --save
+bower install bootstrap --save
+bower install bootstrap-sass --save
+cd ..
+npm install laravel-elixir --save
+npm install gulp --save
+
+## Configuration
+
+Define the DB connection in .env File and run:
+php artisan migrate:install
+php artisan migrate
 
 ## Official Documentation
 
