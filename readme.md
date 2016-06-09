@@ -45,6 +45,12 @@ php artisan migrate:install
 
 php artisan migrate
 
+## Problem
+
+If there is not working, it is because the vendor is not commited. So you have to created a new project with following command: composer create-project laravel/laravel test_laravel_angular
+
+After creating a new project, just copy the clone zip from github to the folder, overwrite the files. Do not forget to configurate the DB. It should be running now.
+
 ## Official Documentation
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
