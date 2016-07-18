@@ -1,3 +1,7 @@
+/*
+ * UserModel by Angular
+ * @author: Quoc Tri Tran
+ */
 myApp.factory('userModel', ['$http', '$cookies', function($http, $cookies){
 	var userModel = {};
 

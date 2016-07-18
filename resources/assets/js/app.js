@@ -1,3 +1,7 @@
+/*
+ * Angular routing definition
+ * @author: Quoc Tri Tran
+ */
 var myApp = angular.module('myApp', ['ngRoute','ngCookies']);
 
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){

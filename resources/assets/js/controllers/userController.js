@@ -1,3 +1,7 @@
+/*
+ * User Controller by Angular
+ * @author: Quoc Tri Tran
+ */
 myApp.controller('userController', ['$scope', '$location', 'userModel', function($scope, $location, userModel){
 	angular.extend($scope, {
 		doLogin: function(loginForm){

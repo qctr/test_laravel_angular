@@ -11,6 +11,11 @@ var elixir = require('laravel-elixir');
  |
  */
 
+ /*
+  * Modify the scripts by gulp
+  * @author: Quoc Tri Tran
+  */
+
 elixir(function(mix) {
     mix.sass('app.scss');
 

@@ -1,4 +1,8 @@
 <?php
+/*
+ * UserController
+ * @author: Quoc Tri Tran
+ */
 
 namespace App\Http\Controllers;
 
@@ -7,6 +11,9 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+	/*
+	 * verify the authentification
+	 */
     public function checkAuth(Request $request) { 
 		$credentials = [
 			'email' => $request->input('email'),

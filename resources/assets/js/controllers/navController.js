@@ -1,3 +1,7 @@
+/*
+ * Navigaton Controller by Angular
+ * @author: Quoc Tri Tran
+ */
 myApp.controller('navController', ['$scope', '$location', 'userModel', function($scope, $location, userModel){
 	/* variables */
 	angular.extend($scope, {

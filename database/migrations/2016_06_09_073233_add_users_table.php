@@ -1,4 +1,8 @@
 <?php
+/*
+ * Migration file for php artisan migrate
+ * @author: Quoc Tri Tran
+ */
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

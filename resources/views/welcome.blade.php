@@ -1,3 +1,5 @@
+<!-- @author Quoc Tri Tran -->
+
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
     <head>
